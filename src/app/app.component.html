@@ -1,0 +1,15 @@
+<!--<mat-toolbar>Responsive side navigator</mat-toolbar>-->
+<mat-sidenav-container hasBackdrop="false">
+  <mat-sidenav #sidenav class="mat-elevation-z8"
+               mode="over" [(opened)]="opened" (opened)="events.push('open!')"
+               (closed)="events.push('close!')" position="end" (onCloseSideNav)="sidenav.toggle()" >
+    <app-sidenav></app-sidenav>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <!-- <app-header (sidenavToggle)="sidenav.toggle()" [sidenav]="sidenav"></app-header> -->
+    <div class="content mat-elevation-z8">
+      Main content here!
+      <button mat-button (click)="sidenav.toggle()">sidenav.toggle()</button>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,0 +1,60 @@
+<div class="button-close">
+  <a href="" class="button-close__cross" (click)="onCloseSideNav()">X</a>
+</div>
+<mat-accordion dir="rtl">
+<!--   <mat-expansion-panel hideToggle>
+    <mat-expansion-panel-header (click)="onOpen()">
+      <mat-panel-title class="panel-title">
+        <div class="panel-title">
+          <div>
+            <img
+              class="panel-title__img"
+              src="https://www.partner.co.il/globalassets/global/partnertvsedarot/images/icoMenu_1.png"
+              alt=""
+            />
+            <span class="panel-title__title"> סדרות</span>
+          </div>
+
+          <img
+            [ngClass]="
+              !rotate ? 'expansion-indicator' : 'expansion-indicator-rotate'
+            "
+            src="https://www.partner.co.il/globalassets/global/partnertvsedarot/images/arrDown.png"
+            alt=""
+          />
+        </div>
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <div class="expansion-panel-menu">
+      <p class="expansion-panel-menu__item">עולם הסדרות</p>
+      <p>ישראליות</p>
+      <p>בינלאומיות</p>
+      <p>לכל המשפחה</p>
+      <p>בידור וריאליטי</p>
+    </div>
+  </mat-expansion-panel> -->
+ 
+  <mat-expansion-panel
+    (opened)="panelOpenState = true"
+    (closed)="panelOpenState = false"
+  >
+    <mat-expansion-panel-header>
+      <mat-panel-title class="panel-title">
+        <img
+          class="panel-title__img"
+          src="https://www.partner.co.il/globalassets/global/partnertvsedarot/images/icoMenu_1.png"
+          alt=""
+        />
+        <span class="panel-title__title"> סדרות</span>
+      </mat-panel-title>
+      <mat-panel-description> </mat-panel-description>
+    </mat-expansion-panel-header>
+    <div class="expansion-panel-menu">
+      <p class="expansion-panel-menu__item">עולם הסדרות</p>
+      <p>ישראליות</p>
+      <p>בינלאומיות</p>
+      <p>לכל המשפחה</p>
+      <p>בידור וריאליטי</p>
+    </div>
+  </mat-expansion-panel>
+</mat-accordion>

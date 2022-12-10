@@ -1,0 +1,73 @@
+::before {
+  padding: 10px;
+}
+
+.button-close {
+  text-align: left;
+  &__cross {
+    font-size: 30px;
+    color: aquamarine;
+    text-decoration: none;
+    font-weight: 700;
+  }
+}
+
+::ng-deep .mat-expansion-panel {
+  background: none;
+  box-shadow: none;
+}
+
+::ng-deep .mat-expansion-panel:not([class*="mat-elevation-z"]) {
+  box-shadow: none;
+}
+
+::ng-deep mat-accordion {
+  border: none;
+  box-shadow: none;
+}
+
+.panel-title {
+  width: 100%;
+  color: #fff;
+  font-weight: 900;
+  font-size: 30px;
+  padding: 5px;
+
+  display: flex;
+  justify-content: flex-start;
+
+  &__title {
+  }
+
+  &__img {
+    height: 40px;
+    margin-bottom: -10px;
+    margin-left: 10px;
+  }
+}
+
+.expansion-panel-menu p {
+  margin-right: 56px;
+  margin-bottom: 20px;
+  font-weight: 900;
+  color: aquamarine;
+  font-size: 30px;
+}
+
+/* .expansion-indicator-rotate {
+  transform: rotate(180deg);
+}
+
+.expansion-indicator {
+  transform: rotate(0deg);
+}
+ */
+
+::ng-deep .mat-expansion-indicator::after {
+  width: 20px;
+  height: 20px;
+  padding: 6px;
+  color: #fff;
+  margin: 5px;
+  border-width: 0 7px 7px 0 !important;
+}
