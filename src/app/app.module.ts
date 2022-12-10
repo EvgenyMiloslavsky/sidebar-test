@@ -33,7 +33,6 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     MatIconModule,
     MatDividerModule,
     MatExpansionModule,
-    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]
